@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+</head>
+<body context="return false">
+    <div class="divcalculator">
+        <div class="div2">
+            <p>Calculator</p>
+            <div class="indiv3">
+                <span class="menu_bar"><i class="fas fa-bars" title="Open Navigation"></i></span>
+                <span class="menu_bar2"><i class="fas fa-bars" title="Open Navigation"></i></span>
+                <div class="theh2">
+                    <h2 class="standards">Standard</h2>
+                    <h2 class="sciences">Scientific</h2>
+                    <h2 class="graphs">Graphing</h2>
+                    <h2 class="programs">Programmer</h2>
+                    <h2 class="date_caltors">Date Calculation</h2>
+                </div>
+            </div>
+            <div class="inputdiv">
+                
+                <input type="text" id="myspan" readonly>
+                <input type="text" id="myindiv" readonly>
+                
+            </div>
+
+           
+
+            <!-- <div > -->
+                <div class="disapdiv">
+                    <p>Calculator</p>
+                    <div class="insidediv">
+                        <div class="flexflex stand">
+                            <i class="fas fa-calculator"></i>  
+                            <h5>Standard</h5>
+                        </div>
+                        <div class="flexflex scien">
+                            <i class="fas fa-flask"></i>
+                            <h5>Scientific</h5>
+                        </div>
+                        <div class="flexflex grap">
+                            <i class="fas fa-chart-line"></i>
+                            <h5>Graphing</h5>
+                        </div>
+                        <div class="flexflex prog">
+                            <i class="fas fa-less-than-equal"></i>
+                            <h5>Programmer</h5>
+                        </div>
+                        <div class="flexflex date_coll">
+                            <i class="fas fa-calendar-minus"></i>
+                            <h5>Date calculation</h5>
+                        </div>
+                    </div>
+                </div>
+            <!-- </div> -->
+            <div class="mystandards">
+
+                <div class="mrcs">
+                    <button>MC</button>
+                    <button>MR</button>
+                    <button>M+</button>
+                    <button>M-</button>
+                    <button>MS</button>
+                    <button>M</button>
+                </div>
+                <div class="allnumbers">
+                    <div class="btndiv">
+                        <button class="graybtn" onclick="percentage()">%</button>
+                        <button class="graybtn" onclick="clea()">CE</button>
+                        <button class="graybtn" onclick="dele()">C</button>
+                        <button class="graybtn" onclick="dele()"><i class="fas fa-arrow-right-from-bracket"></i></button>
+                    </div>
+                    <div class="btndiv">
+                        <button class="graybtn" onclick="myoverx ()">1/x</button>
+                        <button class="graybtn" onclick="mysquare()">x <sup>2</sup></button>
+                        <button class="graybtn" onclick="mysquareroot()"><sup>2&radic;x</button>
+                        <button class="graybtn" onclick="number('/')">&divide;</button>
+                    </div>
+                    <div class="btndiv btndiv2">
+                        <button class="stand7" onclick="number('7')">7</button>
+                        <button class="stand8" onclick="number('8')">8</button>
+                        <button class="stand9" onclick="number('9')">9</button>
+                        <button class="graybtn timess" onclick="number('*')">&times;</button>
+                    </div>
+                    <div class="btndiv btndiv2">
+                        <button class="stand4" onclick="number('4')">4</button>
+                        <button class="stand5" onclick="number('5')">5</button>
+                        <button class="stand6" onclick="number('6')">6</button>
+                        <button class="graybtn minuss" onclick="number('-')">&minus;</button>
+                    </div>
+                    <div class="btndiv btndiv2">
+                        <button class="stand1" onclick="number('1')">1</button>
+                        <button class="stand2" onclick="number('2')">2</button>
+                        <button class="stand3" onclick="number('3')">3</button>
+                        <button class="graybtn pluss" onclick="number('+')">&plus;</button>
+                    </div>
+                    <div class="btndiv">
+                        <button id="plusmins">&plus;/&minus;</button>
+                        <button class="stand0" onclick="number('0')">0</button>
+                        <button class="standot" onclick="number('.')">.</button>
+                        <!-- <button onclick="mysin ()">sin</button> -->
+                        <button class="bluebtn equalss" onclick="evalu('=')">&equals;</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scien_calculates">
+                <div class="degf">
+                    <button>DEG</button>
+                    <button>F-E</button>
+                </div>
+                <div class="mrmcr">
+                    <button>MC</button>
+                    <button>MR</button>
+                    <button>M+</button>
+                    <button>M-</button>
+                    <button>MS</button>
+                    <button>M</button>
+                </div>
+                <div class="trigonofunction">
+                    <button class="trigo"><i class="fas fa-caret-right"></i>  Trigonometry</button> 
+                    <button class="func"><i class="fas fa-florin-sign"></i>  Function</button>
+                   
+                </div>
+                <div class="insidetrifunc">
+                    <div class="insidetri">
+                        <div class="divtri">
+                            <button>2<sup>nd</sup></button>
+                            <button onclick="mysin ()">sin</button>
+                            <button onclick="mycos ()">cos</button>
+                            <button onclick="mytan ()">tan</button>
+                            
+                        </div>
+                        <div class="divtri">
+                            <button onclick="myhypo ()">hyp</button>
+                            <button onclick="myseco ()">sec</button>
+                            <button>csc</button>
+                            <button>cot</button>
+                        </div>
+                    </div>
+
+                    <div class="insidfuc">
+                        <div class="divfun">
+                            <button>|x|</button>
+                            <button>[x]</button>
+                            <button>[x]</button>
+                        </div>
+                        <div class="divfun">
+                            <button>rand</button>
+                            <button><i class="fas fa-arrow-right-long"></i>dms</button>
+                            <button><i class="fas fa-arrow-right-long"></i>deg</button>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div  class="sciensecalculator">
+                    <div class="topsceinceca">
+                        <button>2<sup>nd</sup></button>
+                        <button>&Pi;</button>
+                        <button class="graybtn" onclick="dele()">e</button>
+                        <button class="graybtn" onclick="dele()">C</button>
+                        <button class="graybtn"  onclick="dele2()"><i class="fas fa-arrow-right-from-bracket"></i></button>
+                    </div>
+                    <div class="topsceinceca">
+                        <button class="mygryas" onclick="mysquare()">x<sup>2</sup></button>
+                        <button class="mygryas">1/x</button>
+                        <button class="mygryas">|x|</button>
+                        <button class="mygryas">exp</button>
+                        <button class="mygryas">mod</button>
+                    </div>
+                    <div class="topsceinceca">
+                        <button onclick="mysquareroot"()>2&radic;x</button>
+                        <button>(</button>
+                        <button>)</button>
+                        <button>n!</button>
+                        <button onclick="number('/')">&divide;</button>
+                    </div>
+                    <div class="topsceinceca">
+                        <button>x<sup>y</sup></button>
+                        <button class="myblack" onclick="number('7')">7</button>
+                        <button class="myblack" onclick="number('8')">8</button>
+                        <button class="myblack" onclick="number('9')">9</button>
+                        <button  onclick="number('*')">&times;</button>
+                    </div>
+                    <div class="topsceinceca">
+                        <button>10<sup>x</sup></button>
+                        <button class="myblack" onclick="number('4')">4</button>
+                        <button class="myblack" onclick="number('5')">5</button>
+                        <button class="myblack" onclick="number('6')">6</button>
+                        <button onclick="number('-')">&minus;</button>
+                    </div>
+                    <div class="topsceinceca">
+                        <button>log</button>
+                        <button class="myblack" onclick="number('1')">1</button>
+                        <button class="myblack" onclick="number('2')">2</button>
+                        <button class="myblack" onclick="number('3')">3</button>
+                        <button onclick="number('+')">&plus;</button>
+                    </div>
+                    <div class="topsceinceca">
+                        <button>in</button>
+                        <button class="myblack"><sup>&plus;</sup>/<sub>&minus;</sub></button>
+                        <button class="myblack" onclick="number('0')">0</button>
+                        <button class="myblack">.</button>
+                        <button class="myblues" onclick="evalu('=')">&equals;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <footer>
+
+        <div class="footdiv">
+            <div class="reachme">
+                <p class="reachs">Reach out to me!</p>
+                <p>DISCUSS A PROJECT OR JUST WANT TO SAY HI? MY INBOX IS OPEN FOR ALL</p>
+                <p><i>Copyright <i class="fas fa-copyright"></i> Detribes</i></p>
+                <p class="follow"><i> Follow me on</i></p>
+                <div class="socials">
+                    <a href="https://web.facebook.com/abiodun.yemi.92"><button class="white"><i class="fab fa-facebook-f"></i></button></a>
+                    <a href="https://www.linkedin.com/in/adeyemi-samuel-57b096238"><button class="yellow"><i class="fab fa-linkedin-in"></i></button></a>
+                    <a href="https://twitter.com/Adesam_gfx"><button class="gray"><i class="fab fa-twitter"></i></button></a>
+                    <a href="https://www.instagram.com/abiodun5583/"><button class="white"><i class="fab fa-instagram"></i></button></a>
+                    <a href="https://wa.me/09034606763"><button class="yellow"><i class="fab fa-whatsapp"></i></button></a>
+                    <a href="https://github.com/Adeyemi-247"><button class="gray"><i class="fab fa-github"></i></button></a>
+                </div>
+            </div>
+    </footer>
+
+
+  
+
+    
+
+
+
+
+
+
+    <script src="./js/all.min.js"></script>
+    <script src="./calculator.js"></script>
+</body>
+</html>

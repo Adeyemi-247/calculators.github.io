@@ -1,0 +1,637 @@
+.divcalculator{
+    // background: rgba(0, 0, 0, 0.311);
+    position: relative;
+    width: 100%;
+   
+    .div2{
+        position: relative;
+        width: 100%;
+      
+        p{
+            color: $color1;
+        }
+        .indiv3{
+            display: flex;
+            margin-top: 1rem;
+            gap: 1ch;
+            align-items: center;
+            .menu_bar, .menu_bar2{
+                color: $color1;
+                font-size: 22px;
+                width: 8%;
+                display: flex;
+                justify-content: center;
+                cursor: pointer;
+                &:hover{
+                    background: gray;
+                }
+            }
+            .menu_bar2{
+                display: none;
+            }
+            .theh2{
+                width: 80%;
+                h2{
+                    display: none;
+                    color: $color1;
+                }
+            }
+            // .sciences, .graphs, .programs, .date_caltors{
+                
+            // }
+        }
+        .inputdiv{
+            width: 100%;
+            position: relative;
+            height: 10vh;
+            margin-top: 1ch;
+            display: flex;
+            flex-direction: column;
+            #myspan{
+                width: 100%;
+                background: transparent;
+                justify-content: flex-end;
+                // display: flex;
+                // background: red;
+                // align-items: center;
+                color: $color1;
+                border: none;
+                text-align: right;
+                outline: none;
+            }
+            #myindiv{
+                // justify-content: flex-end;
+                text-align: right;
+                background: transparent;
+                // display: flex;
+                // background: blue;
+                border: none;
+                color: $color1;
+                width: 100%;
+                height: 20vh;
+                outline: none;
+                // align-items: center;
+                font-size: 30px;
+            }
+            // div{
+                // position: relative;
+                // width: 20%;
+                // background: red;
+            // }
+        }
+        .disapdiv{
+            position: fixed;
+            margin-top: 1rem;
+            // display: none;
+            transform:scale(0);
+            // background: rgba(0, 0, 0, 0.971);
+            background: $color5;
+            padding: 2rem 0.5rem;
+            left: 0;
+            width: 300px;
+            z-index: 100;
+            top: 15%;
+            p{
+                font-weight: bold;
+            }
+            .insidediv{
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                // gap: 2rem;
+                margin-top: 2rem;
+                width: 100%;
+                // margin-top: 1ch;
+                .flexflex{
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                    color: $color1;
+                    width: 100%;
+                    height: 9vh;
+                    padding: 2ch;
+                    &:hover{
+                        width: 100%;
+                        background: $color2;
+                    }
+                    h5{
+                        cursor: pointer;
+                        &:hover{
+                            // width: 10%;
+                            // border: 1px solid $color1;
+                            border-left: none;
+                            border-right: none;
+                            border-top: none;
+                            width: 100%;
+    
+                        }
+                    }
+                }
+            }
+        }
+        .mystandards{
+            display: none;
+            .mrcs{
+                width: 100%;
+                display: flex;
+                gap: 1rem;
+                justify-content: center;
+                margin-top: 2ch;
+                button{
+                    width: 30%;
+                    height: 6vh;
+                    background: transparent;
+                    // background: yellow;
+                    border: none;
+                    color: $color1;
+                    font-size: 15px;
+                    &:hover{
+                        width: 30%;
+                        background: $color5;
+                    }
+                }
+            }
+            .allnumbers{
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                display: flex;
+                // background: yellow;
+                gap: 0.5rem;
+                position: relative;
+                margin-top: 1ch;
+                .btndiv{
+                    width: 100%;
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    gap: 0.5rem;
+                    button{
+                        width: 25%;
+                        height:8.6vh;
+                        // background: black;
+                        background: rgba(0, 0, 0, 0.807);
+                        border: none;
+                        color: $color1;
+                        font-size: 14px;
+                        font-weight: bold;
+                        &:hover{
+                            background: $color5;
+                        }
+                    }
+                    .graybtn{
+                        // background: $color5;
+                        background: rgba(0, 0, 0, 0.346);
+                        border: none;
+                    }
+                    .bluebtn{
+                        background: $color4;
+                    }
+                }
+            }
+        }
+
+
+
+        .scien_calculates{
+            width: 100%;
+            position: relative;
+            // margin-top: 1ch;
+            display: none;
+            .degf{
+                width: 50%;
+                display: flex;
+                gap: 2rem;
+                button{
+                    color: $color1;
+                    border: none;
+                    background: transparent;
+                    font-size: 15px;
+                    width: 30%;
+                    height: 6vh;
+                    &:hover{
+                        background: $color5;
+                    }
+                }
+            }
+            .mrmcr{
+                width: 100%;
+                position: relative;
+                display: flex;
+                gap: 1rem;
+                justify-content: center;
+                // margin-top: 1ch;
+                button{
+                    width: 30%;
+                    height: 6vh;
+                    background: transparent;
+                    // background: yellow;
+                    border: none;
+                    color: $color1;
+                    font-size: 15px;
+                    &:hover{
+                        width: 30%;
+                        background: $color5;
+                    }
+                }
+            }
+            .trigonofunction{
+                width: 100%;
+                display: flex;
+                position: relative;
+                gap: 1ch;
+                button{
+                    width: 50%;
+                    height: 7vh;
+                    background: transparent;
+                    color: $color1;
+                    border: none;
+                    &:hover{
+                        background: $color5;
+                    }
+                }
+            }
+
+            .insidetrifunc{
+                width: 100%;
+                position: relative;
+                display: flex; 
+                gap: 1ch;
+                // justify-content: center;
+                margin-top: 5px;
+                position: absolute;
+                height: 18.5vh;
+                z-index: 10;
+                .insidetri, .insidfuc{
+                    width: 50%;
+                    background: $color5;
+                    display: flex;
+                    display: none;
+                    flex-direction: column;
+                    gap: 2px;
+                    padding: 4px;
+                    .divtri, .divfun{
+                        display: flex;
+                        gap: 2px;
+                        margin-top: 2px;
+                        button{
+                            width: 40%;
+                            height: 8vh;
+                            background: $color2;
+                            // background: transparent;
+                            border: none;
+                            color: $color1;
+                            font-size: 14px;
+                            &:hover{
+                                background: $color5;
+                                border: 1px solid $color2;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .sciensecalculator{
+                width: 100%;
+                position: relative;
+                .topsceinceca{
+                    width: 100%;
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    gap: 4px;
+                    margin-top: 4px;
+                    button{
+                        background: rgba(0, 0, 0, 0.346);
+                        color: $color1;
+                        width: 35%;
+                        height: 7vh;
+                        border: none;
+                        font-size: 15px;
+                        &:hover{
+                            background: $color5;
+                        }
+                    }
+                    .mygryas{
+                        &:hover{
+                            background: $color5;
+                        }
+                    }
+                    .myblack{
+                        background: $color2;
+                    }
+                    .myblues{
+                        background: $color4;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+footer{
+    width: 100%;
+    position: relative;
+    background: $color3;
+    display: flex;
+    justify-content: center;
+    padding: 4ch 2ch;
+    margin-top: 5rem;
+    .footdiv{
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .reachme{
+            width: 100%;
+            position: relative;
+            p{
+                margin-top: 1ch;
+                color: $color4;
+                text-align: center;
+                // color: $color1;
+            }
+            .follow{
+                margin-top: 3ch;
+            }
+            .reachs{
+                font-size: 20px;
+            }
+            .socials{
+                width:100%;
+                position: relative;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 1ch;
+                justify-content: center;
+                margin-top: 1ch;
+                a button{
+                    width: 34px;
+                    height: 6vh;
+                    border-radius: 50%;
+                    border: none;
+                    cursor: pointer;
+                    font-size: 18px;
+
+                }
+                .white{
+                    background: $color1;
+                    color: $color4;
+                }
+                .yellow{
+                    background: $color4;
+                    color: $color1;
+                }
+                .blue{
+                    background: #f16529;
+                    color: $color1;
+                }
+                .gray{
+                    background: #f16529;
+                    color: $color1;
+                }
+                .black{
+                    background: $color5;
+                    color: $color1;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+@media screen and(min-width:600px){
+    .divcalculator{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        // padding: 5rem;
+        .div2{
+            width: 60%;
+            border: 1px solid $color1;
+            padding: 1rem;
+            // height: 80%;
+            .disapdiv{
+                left: 120px;
+                width: 270px;
+                background: $color5;
+                position: fixed;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+@media screen and(min-width:638px){
+    .divcalculator{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        // padding: 5rem;
+        .div2{
+            width: 60%;
+            border: 1px solid $color1;
+            padding: 1rem;
+            // height: 80%;
+            .disapdiv{
+                left: 130px;
+                width: 270px;
+                background: $color5;
+                position: fixed;
+            }
+        }
+    }
+}
+
+
+
+@media screen and(min-width:638px){
+    .divcalculator{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        // padding: 5rem;
+        .div2{
+            width: 60%;
+            border: 1px solid $color1;
+            padding: 1rem;
+            // height: 80%;
+            .disapdiv{
+                left: 150px;
+                width: 270px;
+                background: $color5;
+                position: fixed;
+            }
+        }
+    }
+}
+
+
+
+@media screen and(min-width:802px){
+    .divcalculator{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        // padding: 5rem;
+        .div2{
+            width: 60%;
+            border: 1px solid $color1;
+            padding: 1rem;
+            // height: 80%;
+            .disapdiv{
+                left: 170px;
+                width: 270px;
+                background: $color5;
+                position: fixed;
+            }
+        }
+    }
+}
+
+
+
+@media screen and(min-width:908px){
+    .divcalculator{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        // padding: 5rem;
+        .div2{
+            width: 60%;
+            border: 1px solid $color1;
+            padding: 1rem;
+            // height: 80%;
+            .disapdiv{
+                left: 190px;
+                width: 270px;
+                background: $color5;
+                position: fixed;
+            }
+        }
+    }
+}
+
+
+
+@media screen and(min-width:1018px){
+    .divcalculator{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        // padding: 5rem;
+        .div2{
+            width: 60%;
+            border: 1px solid $color1;
+            padding: 1rem;
+            // height: 80%;
+            .disapdiv{
+                left: 210px;
+                width: 270px;
+                background: $color5;
+                position: fixed;
+            }
+        }
+    }
+}
+
+
+
+
+
+@media screen and(min-width:1135px){
+    .divcalculator{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        // padding: 5rem;
+        .div2{
+            width: 60%;
+            border: 1px solid $color1;
+            padding: 1rem;
+            // height: 80%;
+            .disapdiv{
+                left: 230px;
+                width: 270px;
+                background: $color5;
+                position: fixed;
+            }
+        }
+    }
+}
+
+
+
+
+@media screen and(min-width:1246px){
+    .divcalculator{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        // padding: 5rem;
+        .div2{
+            width: 60%;
+            border: 1px solid $color1;
+            padding: 1rem;
+            // height: 80%;
+            .disapdiv{
+                left: 245px;
+                width: 270px;
+                background: $color5;
+                position: fixed;
+            }
+        }
+    }
+}
+
+
+
+@media screen and(min-width:1329px){
+    .divcalculator{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        // padding: 5rem;
+        .div2{
+            width: 60%;
+            border: 1px solid $color1;
+            padding: 1rem;
+            // height: 80%;
+            .disapdiv{
+                left: 260px;
+                width: 270px;
+                background: $color5;
+                position: fixed;
+            }
+        }
+    }
+}
